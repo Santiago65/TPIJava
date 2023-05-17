@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel=StyleSheet href="css/estilos.css" type="text/css" media=screen>
+   
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"     crossorigin="anonymous">
+    
+    <title>Conferencia-Buenos Aires</title>
+</head>
+<body>
+    <!-- navegacion -->
+    <nav class="navbar navegacion navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img id="imagenLogo" src="./img/codoacodo.png" alt="logo"> <h2 class="tituloLogo">Conf Bs As</h2>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"     aria-controls="offcanvasNavbar">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header menuNav">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body navegacion">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class=" enlaces" aria-current="page" href="#">La conferencia</a>
+                </li>
+                <li class="nav-item">
+                  <a class=" enlaces" href="#">Los Oradores</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" enlaces" href="#">Lugar y Fecha</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" enlaces" href="#">Conviertete en orador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="enlaces--active" href="#">Comprar Ticket</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- fin de navegacion -->
+<section class="section-entradas">
+    <div class="contenedor-entrada">
+        <div class="entradas blue">
+            <h3 class="entradas-titulos">Estudiante</h3>
+            <p>Tiene un descuento <span class="entradas-descuento">80%</span><span class="entradas-doc">*presentar documentación</span></p>
+        </div>
+        <div class="entradas green">
+            <h3 class="entradas-titulos">Trainee</h3>
+            <p>Tiene un descuento <span class="entradas-descuento">50%</span><span class="entradas-doc">*presentar documentación</span></p>
+        </div>
+        <div class="entradas yellow">
+            <h3 class="entradas-titulos">Junior</h3>
+            <p>Tiene un descuento <span class="entradas-descuento">15%</span><span class="entradas-doc">*presentar documentación</span></p>
+        </div>
+    </div>
+</section>
+
+<form class="formulario-ticket">
+    <h3 class="formulario-titulo"><span class="formulario-valor">VENTA</span> valor de ticket $200</h3>
+    <div class="ticket-grid">
+        <input id="nombre" class="tickets"  type="text" placeholder="Nombre">
+        <input id="apellido" class="tickets" type="text" placeholder="Apellido">
+        <input id="correo"  class="ticket-grid-correo tickets" type="email" placeholder="Correo">
+      
+        <input id="cantidad" class="tickets" type="number" placeholder="Cantidad" min="1">
+      
+        <select class="tickets" id="select">
+            
+            <option  disabled selected>Categoría</option>
+            
+            <option id="estudiante" >Estudiante</option>
+            <option id="trainee">Trainee</option>
+            <option id="junior">Junior</option>
+        </select>
+        <input id="borrar" class="tickets tickets-btn" type="submit" value="Borrar">
+        <input id="resumen" class="tickets tickets-btn" type="submit" value="Resumen">
+    </div>
+</form>
+<!-- footer  -->
+<footer class="footer footer-tickets">
+    <ul class="container footer-lista">
+      <li class="footer-lista-li"><a class=" footer-lista-a" href="#">Preguntas Frecuentes</a></li>
+      <li class="footer-lista-li"><a class=" footer-lista-a" href="#">Contáctanos</a></li>
+      <li class="footer-lista-li"><a class=" footer-lista-a" href="#">Prensa</a></li>
+      <li class="footer-lista-li"><a class=" footer-lista-a" href="#">Conferencias</a></li>
+      <li class="footer-lista-li"><a class=" footer-lista-a" href="#">Términos y condiciones</a></li>
+      <li class="footer-lista-li"><a class=" footer-lista-a" href="#">Privacidad</a></li>
+      <li class="footer-lista-li"><a class=" footer-lista-a" href="#">Estudiantes</a></li>
+    </ul>
+</footer>
+<!-- fin footer -->
+<!-- JavaScript Bundle with Popper -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"     crossorigin="anonymous"></script>
+         <script src="js/tikets.js"></script>
+   </body>
+</html>

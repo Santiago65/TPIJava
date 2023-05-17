@@ -166,8 +166,8 @@ img{
 }
 /* FOOTER  */
 .footer{
-    background: rgb(9,58,96);
-    background: linear-gradient(90deg, rgba(9,58,96,1) 0%, rgba(5,83,136,1) 100%);
+    background: rgb(0, 6, 10);
+    background: linear-gradient(90deg, rgb(1, 18, 31) 0%, rgb(1, 37, 61) 100%);
 }
 .footer-lista{
     list-style: none;
@@ -309,18 +309,21 @@ img{
 
 .contenedorCompra{
     display: inline-block;
-    width: 50%;
-    height: 200px;
-    margin: 20px 0 20px 200px;
+    width: 100%;
+    /* height: 100px; */
+    /* margin: 20px 0 20px 200px; */
+    margin-top: 1rem;
     text-align: center;
     background: rgb(62,65,68);
-    background: radial-gradient(circle, rgba(62,65,68,1) 0%, rgba(165,167,172,0.7740138291644783) 100%);
+    background: radial-gradient(circle, rgb(91, 130, 168) 0%, rgba(114, 147, 231, 0.774) 100%);
     border-radius: 5px; 
-    padding-top: 50px;
+    padding-top: 70px;
+    
     text-transform: uppercase;
-    color: var(--amarillo);
-    font-weight: bold;
+    color: var(--negro);
+    font-weight:lighter;
     font-size: 25px;
+    
 }
 @media (max-width: 748px){
     .contenedorCompra{
