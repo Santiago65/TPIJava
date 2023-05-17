@@ -315,7 +315,7 @@ img{
     margin-top: 1rem;
     text-align: center;
     background: rgb(62,65,68);
-    background: radial-gradient(circle, rgb(91, 130, 168) 0%, rgba(114, 147, 231, 0.774) 100%);
+    background: radial-gradient(circle, rgb(155, 188, 221) 0%, rgba(164, 187, 245, 0.774) 100%);
     border-radius: 5px; 
     padding-top: 70px;
     
